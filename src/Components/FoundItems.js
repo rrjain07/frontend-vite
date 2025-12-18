@@ -63,7 +63,7 @@ export default function FoundItems() {
   useEffect(() => {
     
     Axios({
-      url: "http://localhost:4000/items",
+      url: "https://backend-vite-eew.vercel.app/",
       method: "GET",
     })
       .then((response) => {      
