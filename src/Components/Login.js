@@ -28,7 +28,7 @@ function Login() {
       password: values.password,
     };
     axios({
-      url: "https://backend-vite-eew.vercel.app/",
+      url: "https://backend-vite-eew.vercel.app/users/login",
       method: "POST",
       data: payload,
 

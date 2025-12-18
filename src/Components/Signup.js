@@ -52,7 +52,7 @@ function Signup() {
               // on complete
               getDownloadURL(uploadTask.snapshot.ref).then(async (imgUrl) => {
                 const payload = { nickname, fullname, email, password, img: imgUrl };
-                await axios.post("https://backend-vite-eew.vercel.app/users/create", payload)
+                await axios.post("https://backend-vite-eew.vercel.app/users/create", payload,{ withCredentials: true })
                   .then((response) => {
                     setInfo(response.data);
                     if (response.data === "Done") {
